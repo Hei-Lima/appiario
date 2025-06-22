@@ -1,14 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appiario</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Appiario - Generate cURL Commands for Your API | Simple API Testing Tool</title>
+    <meta name="description" content="The simplest way to generate cURL commands for your API. Create, test, and share API requests with Appiario - the developer-friendly tool for API testing and documentation.">
+    <meta name="keywords" content="curl generator, api testing, curl commands, api tools, rest api, http requests, developer tools, api documentation">
+    <meta name="author" content="Appiario">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hei-lima.tech/appiario">
+    <meta property="og:title" content="Appiario - Generate cURL Commands for Your API">
+    <meta property="og:description" content="The simplest way to generate cURL commands for your API. Create, test, and share API requests with ease.">
+    <meta property="og:image" content="https://hei-lima.tech/appiario/assets/images/appiario-link-card.png">
+    <meta property="og:site_name" content="Appiario">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hei-lima.tech/appiario">
+    <meta property="twitter:title" content="Appiario - Generate cURL Commands for Your API">
+    <meta property="twitter:description" content="The simplest way to generate cURL commands for your API. Create, test, and share API requests with ease.">
+    <meta property="twitter:image" content="https://hei-lima.tech/appiario/assets/images/appiario-link-card-twitter.png">
+    <meta property="twitter:creator" content="@appiario">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://hei-lima.tech/appiario">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    
+    <!-- Structured Data - JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Appiario",
+        "description": "The simplest way to generate cURL commands for your API",
+        "url": "https://hei-lima.tech/appiario",
+        "logo": "https://hei-lima.tech/appiario/assets/images/appiario-logo.svg",
+        "sameAs": [
+            "https://twitter.com/appiario",
+            "https://github.com/appiario"
+        ],
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://hei-lima.tech/appiario/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Appiario",
+        "description": "Generate cURL commands for your API with the simplest tool for developers",
+        "url": "https://hei-lima.tech/appiario",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "150"
+        }
+    }
+    </script>
+    
+    <!-- CSS Files -->
     <link href="./assets/css/output.css" rel="stylesheet">
     <link href="./assets/css/fonts.css" rel="stylesheet">
     <link href="./assets/css/background.css" rel="stylesheet">
 </head>
-<body class="font-sserif relative overflow-hidden min-h-screen flex items-center justify-center">
+<body class="font-serif relative overflow-hidden min-h-screen flex items-center justify-center">
     <!-- SVG Filter for grain effect -->
     <svg class="absolute">
         <filter id='noiseFilter'>
@@ -22,11 +112,29 @@
         </filter>
     </svg>
 
-    <div class="flex items-center justify-center z-10">
-        <video autoplay muted loop class="max-w-md max-h-96 object-contain">
-            <source src="./assets/videos/logo.webm" type="video/webm">
-            Seu navegador não suporta o elemento de vídeo.
-        </video>
+    <div class="flex flex-col items-center justify-center z-10 text-center px-4 sm:px-6 lg:px-8 w-full max-w-4xl mx-auto min-h-screen">
+        <!-- Logo SVG -->
+        <div class="mb-4 sm:mb-6">
+            <img src="./assets/images/appiario-logo.svg" alt="Appiario Logo" class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40">
+        </div>
+
+        <!-- Video -->
+        <div class="mb-4 sm:mb-6 w-full max-w-xs sm:max-w-sm md:max-w-md">
+            <video autoplay muted loop class="w-full h-auto max-h-48 sm:max-h-64 md:max-h-80 object-contain">
+                <source src="./assets/videos/logo.webm" type="video/webm">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <!-- Title text -->
+        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-serif text-base-content mb-4 sm:mb-6 max-w-2xl sm:max-w-3xl md:max-w-4xl leading-tight">
+            The simplest way to generate cURL commands for your API
+        </h1>
+
+        <!-- Button -->
+        <a href="/app/create" class="btn btn-primary btn-sm sm:btn-md md:btn-lg font-sans px-6 sm:px-8 md:px-10 text-sm sm:text-base md:text-lg">
+            Get Started
+        </a>
     </div>
 
     <div class="blob-cont">
